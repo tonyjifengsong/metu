@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Authors>Tony</Authors>
+    <Company>深圳一水网络科技有限公司</Company>
+    <Product>METU</Product>
+    <Description>深圳一水网络科技有限公司开源项目</Description>
+    <Copyright>深圳一水网络科技有限公司</Copyright>
+    <AssemblyVersion>2022.03.24</AssemblyVersion>
+    <FileVersion>2022.03.24</FileVersion>
+    <Version>2022.04.01</Version>
+    <PackageReleaseNotes>
+      Company:深圳一水网络科技有限公司
+      开发人员：Tony
+      Tel:13829169467
+      E-Mail:tony@songjifeng.cn
+    </PackageReleaseNotes>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\license.txt" Link="license.txt">
+      <PackagePath></PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Consul" Version="1.6.10.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

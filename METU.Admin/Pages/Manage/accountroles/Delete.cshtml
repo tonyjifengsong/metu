@@ -1,0 +1,82 @@
+﻿@page
+@model METU.Admin.Pages.Manage.accountroles.DeleteModel
+
+@{
+    ViewData["Title"] = "删除";
+}
+
+<h1>删除</h1>
+
+
+<div>
+    <h4>SysaccountRole</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.Softtype)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.Softtype)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.Accountid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.Accountid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.Roleid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.Roleid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.UpdateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.UpdateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.CreateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.CreateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.UpdateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.UpdateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.IsEnabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.IsEnabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysaccountRole.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysaccountRole.IsDeleted)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SysaccountRole.id" />
+        <input type="submit" value="删除" class="btn btn-danger" /> |
+        <a asp-page="./Index">返回</a>
+    </form>
+</div>

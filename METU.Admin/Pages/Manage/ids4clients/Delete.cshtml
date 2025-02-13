@@ -1,0 +1,340 @@
+﻿@page
+@model METU.Admin.Pages.Manage.ids4clients.DeleteModel
+
+@{
+    ViewData["Title"] = "删除";
+}
+
+<h1>删除</h1>
+
+
+<div>
+    <h4>Id4client</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AppName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AppName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Pid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Pid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowOfflineAccess)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowOfflineAccess)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.IdentityTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.IdentityTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowedIdentityTokenSigningAlgorithms)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowedIdentityTokenSigningAlgorithms)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AccessTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AccessTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AuthorizationCodeLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AuthorizationCodeLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AbsoluteRefreshTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AbsoluteRefreshTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.SlidingRefreshTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.SlidingRefreshTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.ConsentLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.ConsentLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RefreshTokenUsage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RefreshTokenUsage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.UpdateAccessTokenClaimsOnRefresh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.UpdateAccessTokenClaimsOnRefresh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RefreshTokenExpiration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RefreshTokenExpiration)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AccessTokenType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AccessTokenType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.EnableLocalLogin)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.EnableLocalLogin)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.IdentityProviderRestrictions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.IdentityProviderRestrictions)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.IncludeJwtid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.IncludeJwtid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Claims)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Claims)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AlwaysSendClientClaims)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AlwaysSendClientClaims)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.ClientClaimsPrefix)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.ClientClaimsPrefix)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.PairWiseSubjectSalt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.PairWiseSubjectSalt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.UserSsoLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.UserSsoLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.UserCodeType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.UserCodeType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.DeviceCodeLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.DeviceCodeLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AlwaysIncludeUserClaimsInIdToken)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AlwaysIncludeUserClaimsInIdToken)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowedScopes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowedScopes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Properties)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Properties)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.BackChannelLogoutSessionRequired)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.BackChannelLogoutSessionRequired)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Clientid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Clientid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.ProtocolType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.ProtocolType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.ClientSecrets)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.ClientSecrets)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RequireClientSecret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RequireClientSecret)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.ClientName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.ClientName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.ClientUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.ClientUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.LogoUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.LogoUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RequireConsent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RequireConsent)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowRememberConsent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowRememberConsent)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowedGrantTypes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowedGrantTypes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RequirePkce)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RequirePkce)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RequireRequestObject)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RequireRequestObject)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowAccessTokensViaBrowser)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowAccessTokensViaBrowser)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.RedirectUris)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.RedirectUris)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.PostLogoutRedirectUris)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.PostLogoutRedirectUris)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.FrontChannelLogoutUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.FrontChannelLogoutUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.FrontChannelLogoutSessionRequired)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.FrontChannelLogoutSessionRequired)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.BackChannelLogoutUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.BackChannelLogoutUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.AllowedCorsOrigins)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.AllowedCorsOrigins)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Descriptions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Descriptions)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4client.Auth2claims)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4client.Auth2claims)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Id4client.id" />
+        <input type="submit" value="删除" class="btn btn-danger" /> |
+        <a asp-page="./Index">返回</a>
+    </form>
+</div>

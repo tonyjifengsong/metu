@@ -1,0 +1,87 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspagedic.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].SetKey)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].SortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].SortCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].Rank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].Parentid)
+            </th>
+               <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].IsEnabled)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].Version)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].Cname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SyspageDic[0].AppName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SyspageDic) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SetKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SortName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SortCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parentid)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.IsEnabled)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

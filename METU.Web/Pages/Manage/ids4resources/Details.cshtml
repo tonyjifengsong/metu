@@ -1,0 +1,337 @@
+﻿@page
+@model METU.Admin.Pages.Manage.ids4resources.DetailsModel
+
+@{
+    ViewData["Title"] = "详情 ";
+}
+
+<h1>详情</h1>
+
+<div>
+    <h4>Id4resource</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AppName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AppName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Pid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Pid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowOfflineAccess)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowOfflineAccess)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.IdentityTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.IdentityTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowedIdentityTokenSigningAlgorithms)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowedIdentityTokenSigningAlgorithms)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AccessTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AccessTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AuthorizationCodeLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AuthorizationCodeLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AbsoluteRefreshTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AbsoluteRefreshTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.SlidingRefreshTokenLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.SlidingRefreshTokenLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.ConsentLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.ConsentLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RefreshTokenUsage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RefreshTokenUsage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.UpdateAccessTokenClaimsOnRefresh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.UpdateAccessTokenClaimsOnRefresh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RefreshTokenExpiration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RefreshTokenExpiration)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AccessTokenType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AccessTokenType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.EnableLocalLogin)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.EnableLocalLogin)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.IdentityProviderRestrictions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.IdentityProviderRestrictions)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.IncludeJwtid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.IncludeJwtid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Claims)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Claims)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AlwaysSendClientClaims)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AlwaysSendClientClaims)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.ClientClaimsPrefix)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.ClientClaimsPrefix)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.PairWiseSubjectSalt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.PairWiseSubjectSalt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.UserSsoLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.UserSsoLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.UserCodeType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.UserCodeType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.DeviceCodeLifetime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.DeviceCodeLifetime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AlwaysIncludeUserClaimsInIdToken)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AlwaysIncludeUserClaimsInIdToken)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowedScopes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowedScopes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Properties)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Properties)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.BackChannelLogoutSessionRequired)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.BackChannelLogoutSessionRequired)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Clientid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Clientid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.ProtocolType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.ProtocolType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.ClientSecrets)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.ClientSecrets)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RequireClientSecret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RequireClientSecret)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.ClientName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.ClientName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.ClientUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.ClientUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.LogoUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.LogoUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RequireConsent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RequireConsent)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowRememberConsent)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowRememberConsent)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowedGrantTypes)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowedGrantTypes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RequirePkce)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RequirePkce)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RequireRequestObject)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RequireRequestObject)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowAccessTokensViaBrowser)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowAccessTokensViaBrowser)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.RedirectUris)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.RedirectUris)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.PostLogoutRedirectUris)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.PostLogoutRedirectUris)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.FrontChannelLogoutUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.FrontChannelLogoutUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.FrontChannelLogoutSessionRequired)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.FrontChannelLogoutSessionRequired)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.BackChannelLogoutUri)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.BackChannelLogoutUri)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.AllowedCorsOrigins)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.AllowedCorsOrigins)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Descriptions)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Descriptions)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4resource.Auth2claims)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id4resource.Auth2claims)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Id4resource.id">编辑</a> |
+    <a asp-page="./Index">返回</a>
+</div>

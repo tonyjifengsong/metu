@@ -1,0 +1,127 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspageservices.DetailsModel
+
+@{
+    ViewData["Title"] = "详情 ";
+}
+
+<h1>详情</h1>
+
+<div>
+    <h4>SysPageService</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.Domainid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.Domainid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.Servicename)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.Servicename)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.ServiceEvents)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.ServiceEvents)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.Remarks)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.Remarks)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.ReturnType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.ReturnType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.CreatedTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.CreatedTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.CreatedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.CreatedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.ModifiedTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.ModifiedTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.ModifiedBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.ModifiedBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.UpdateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.UpdateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.CreateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.CreateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.UpdateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.UpdateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.IsEnabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.IsEnabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.IsDeleted)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.Version)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.Version)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageService.Methodname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageService.Methodname)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SysPageService.id">编辑</a> |
+    <a asp-page="./Index">返回</a>
+</div>

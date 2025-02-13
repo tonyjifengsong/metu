@@ -1,0 +1,31 @@
+﻿一、不写任务类处理定时任务
+
+1、在项目的Startup文件中的ConfigureServices方法中添加如下语句：
+  services.AddAutoJobConfig(); 
+2、在 Configure 方法中添加多一个参数Microsoft.AspNetCore.Hosting.IApplicationLifetime lifetime；
+  添加如下语句：
+   app.UseAutoJobMiddleware(lifetime);
+
+3、重点要引入项目 METU.Quartz  或，项目METU.Quartz的Nuget包;
+
+4、写自己的定时处理的业务逻辑类；类必需继承IDoWork 接口；把业务逻辑写到dowork方法中；
+
+5、如果有多个任务，可以直接写多个类，全部继承IDoWork；
+
+6、修改 MyJob类中的 GetTimerFrequent 方法返回值；此值为 任务的执行频率，单位为秒。
+
+二、写任务类处理定时任务
+
+1、在项目的Startup文件中的ConfigureServices方法中添加如下语句：
+  services.AddAutoJobConfig(); 
+2、在 Configure 方法中添加多一个参数Microsoft.AspNetCore.Hosting.IApplicationLifetime lifetime；
+  添加如下语句：
+   app.UseAutoJobMiddleware(lifetime);
+
+3、重点要引入项目 METU.Quartz  或，项目METU.Quartz的Nuget包;
+
+4、写自己的定时处理的业务逻辑类；类必需继承ITonyJob 接口；把业务逻辑写到Execute方法中；
+
+5、 GetTimerFrequent 方法中返回执行频率； 
+
+ 

@@ -1,0 +1,112 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspage.DeleteModel
+
+@{
+    ViewData["Title"] = "删除";
+}
+
+<h1>删除</h1>
+
+
+<div>
+    <h4>SysPage</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.IdorderNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.IdorderNo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.PageName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.PageName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.ObjectType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.ObjectType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.ObjectName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.ObjectName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.PageNameEns)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.PageNameEns)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.Sourcedata)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.Sourcedata)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.InterfaceAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.InterfaceAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.UpdateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.UpdateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.CreateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.CreateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.UpdateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.UpdateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.IsEnabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.IsEnabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.IsDeleted)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPage.Version)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPage.Version)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SysPage.id" />
+        <input type="submit" value="删除" class="btn btn-danger" /> |
+        <a asp-page="./Index">返回</a>
+    </form>
+</div>

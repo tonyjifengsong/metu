@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework> 
+ 
+		<PackageLicenseFile>license.txt</PackageLicenseFile>
+		<PackageIcon>20210821000246.png</PackageIcon>
+	    <RepositoryUrl>https://e.coding.net/greefsong/metucore/METU.git</RepositoryUrl>
+    <PackageTags></PackageTags>
+    <RepositoryType>开源</RepositoryType>
+    <PackageProjectUrl>https://e.coding.net/greefsong/metucore/METU.git</PackageProjectUrl>
+    <Version>2022.04.02</Version>
+    <Authors>Tony</Authors>
+    <Company>深圳一水网络科技有限公司</Company>
+    <Product>深圳一水网络科技有限公司</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>深圳一水网络科技有限公司</Description>
+    <Copyright>深圳一水网络科技有限公司</Copyright>
+    <PackageReleaseNotes>深圳一水网络科技有限公司</PackageReleaseNotes>
+  </PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="ElasticSearch\**" />
+	  <EmbeddedResource Remove="ElasticSearch\**" />
+	  <None Remove="ElasticSearch\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Elasticsearch.Net" Version="7.17.0" />
+		<PackageReference Include="METU.CACHES" Version="2022.4.3" />
+		<PackageReference Include="METU.EXTENTIONS" Version="2022.4.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+		<PackageReference Include="NEST" Version="7.17.0" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\20210821000246.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\license.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	  </ItemGroup>
+
+</Project>

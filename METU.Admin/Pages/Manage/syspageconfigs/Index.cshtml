@@ -1,0 +1,136 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspageconfigs.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].SysPageid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].ControlName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].ControlCaption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].ControlType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Placeholder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Require)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Msg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Explain)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Enabled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].SourceData)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].InterfaceAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].ControlOrder)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].IsGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].GroupField)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].IsEnabled)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Cid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageConfig[0].Version)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SysPageConfig) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SysPageid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ControlName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ControlCaption)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ControlType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Placeholder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Require)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Msg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Explain)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enabled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceData)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InterfaceAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ControlOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupField)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.IsEnabled)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Cid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

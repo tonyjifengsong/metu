@@ -1,0 +1,46 @@
+﻿@page
+@model METU.Admin.Pages.Manage.sysadmins.DeleteModel
+
+@{
+    ViewData["Title"] = "删除";
+}
+
+<h1>删除</h1>
+
+
+<div>
+    <h4>SysAdmin</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysAdmin.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysAdmin.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysAdmin.UserName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysAdmin.UserName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysAdmin.Password)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysAdmin.Password)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysAdmin.Remark)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysAdmin.Remark)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SysAdmin.id" />
+        <input type="submit" value="删除" class="btn btn-danger" /> |
+        <a asp-page="./Index">返回</a>
+    </form>
+</div>

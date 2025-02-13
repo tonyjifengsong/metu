@@ -1,0 +1,50 @@
+﻿@page
+@model METU.Admin.Pages.Manage.sysadmins.EditModel
+
+@{
+    ViewData["Title"] = "编辑";
+}
+
+<h1>编辑</h1>
+
+<h4>SysAdmin</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SysAdmin.id" />
+            <div class="form-group">
+                <label asp-for="SysAdmin.CreateDate" class="control-label"></label>
+                <input asp-for="SysAdmin.CreateDate" class="form-control" />
+                <span asp-validation-for="SysAdmin.CreateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysAdmin.UserName" class="control-label"></label>
+                <input asp-for="SysAdmin.UserName" class="form-control" />
+                <span asp-validation-for="SysAdmin.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysAdmin.Password" class="control-label"></label>
+                <input asp-for="SysAdmin.Password" class="form-control" />
+                <span asp-validation-for="SysAdmin.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysAdmin.Remark" class="control-label"></label>
+                <input asp-for="SysAdmin.Remark" class="form-control" />
+                <span asp-validation-for="SysAdmin.Remark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit"  value="保存"  class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

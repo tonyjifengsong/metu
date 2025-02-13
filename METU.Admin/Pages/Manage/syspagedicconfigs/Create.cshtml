@@ -1,0 +1,104 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspagedicconfigs.CreateModel
+
+@{
+    ViewData["Title"] = "新增";
+}
+
+<h1>新增</h1>
+
+<h4>SyspageDicconfig</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.SetKey" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.SetKey" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.SetKey" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.ConfigName" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.ConfigName" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.ConfigName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.ConfigValue" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.ConfigValue" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.ConfigValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.ConfigExplain" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.ConfigExplain" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.ConfigExplain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.Rank" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.Rank" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.Rank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.id" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.id" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.id" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="SyspageDicconfigs.Pid" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.Pid" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.Pid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.Cid" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.Cid" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.Cid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.UpdateUserid" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.UpdateUserid" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.UpdateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.CreateUserid" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.CreateUserid" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.CreateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.UpdateDate" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.UpdateDate" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.UpdateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.CreateDate" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.CreateDate" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.CreateDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.IsEnabled" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.IsEnabled" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.IsEnabled" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="SyspageDicconfigs.IsDeleted" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.IsDeleted" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.IsDeleted" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SyspageDicconfigs.Dicid" class="control-label"></label>
+                <input asp-for="SyspageDicconfigs.Dicid" class="form-control" />
+                <span asp-validation-for="SyspageDicconfigs.Dicid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

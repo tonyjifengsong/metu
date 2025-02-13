@@ -1,0 +1,295 @@
+﻿@page
+@model METU.Admin.Pages.Manage.ids4clients.EditModel
+
+@{
+    ViewData["Title"] = "编辑";
+}
+
+<h1>编辑</h1>
+
+<h4>Id4client</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id4client.id" />
+            <div class="form-group">
+                <label asp-for="Id4client.AppName" class="control-label"></label>
+                <input asp-for="Id4client.AppName" class="form-control" />
+                <span asp-validation-for="Id4client.AppName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Pid" class="control-label"></label>
+                <input asp-for="Id4client.Pid" class="form-control" />
+                <span asp-validation-for="Id4client.Pid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Cid" class="control-label"></label>
+                <input asp-for="Id4client.Cid" class="form-control" />
+                <span asp-validation-for="Id4client.Cid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowOfflineAccess" class="control-label"></label>
+                <input asp-for="Id4client.AllowOfflineAccess" class="form-control" />
+                <span asp-validation-for="Id4client.AllowOfflineAccess" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.IdentityTokenLifetime" class="control-label"></label>
+                <input asp-for="Id4client.IdentityTokenLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.IdentityTokenLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowedIdentityTokenSigningAlgorithms" class="control-label"></label>
+                <input asp-for="Id4client.AllowedIdentityTokenSigningAlgorithms" class="form-control" />
+                <span asp-validation-for="Id4client.AllowedIdentityTokenSigningAlgorithms" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AccessTokenLifetime" class="control-label"></label>
+                <input asp-for="Id4client.AccessTokenLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.AccessTokenLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AuthorizationCodeLifetime" class="control-label"></label>
+                <input asp-for="Id4client.AuthorizationCodeLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.AuthorizationCodeLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AbsoluteRefreshTokenLifetime" class="control-label"></label>
+                <input asp-for="Id4client.AbsoluteRefreshTokenLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.AbsoluteRefreshTokenLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.SlidingRefreshTokenLifetime" class="control-label"></label>
+                <input asp-for="Id4client.SlidingRefreshTokenLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.SlidingRefreshTokenLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.ConsentLifetime" class="control-label"></label>
+                <input asp-for="Id4client.ConsentLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.ConsentLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RefreshTokenUsage" class="control-label"></label>
+                <input asp-for="Id4client.RefreshTokenUsage" class="form-control" />
+                <span asp-validation-for="Id4client.RefreshTokenUsage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.UpdateAccessTokenClaimsOnRefresh" class="control-label"></label>
+                <input asp-for="Id4client.UpdateAccessTokenClaimsOnRefresh" class="form-control" />
+                <span asp-validation-for="Id4client.UpdateAccessTokenClaimsOnRefresh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RefreshTokenExpiration" class="control-label"></label>
+                <input asp-for="Id4client.RefreshTokenExpiration" class="form-control" />
+                <span asp-validation-for="Id4client.RefreshTokenExpiration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AccessTokenType" class="control-label"></label>
+                <input asp-for="Id4client.AccessTokenType" class="form-control" />
+                <span asp-validation-for="Id4client.AccessTokenType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.EnableLocalLogin" class="control-label"></label>
+                <input asp-for="Id4client.EnableLocalLogin" class="form-control" />
+                <span asp-validation-for="Id4client.EnableLocalLogin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.IdentityProviderRestrictions" class="control-label"></label>
+                <input asp-for="Id4client.IdentityProviderRestrictions" class="form-control" />
+                <span asp-validation-for="Id4client.IdentityProviderRestrictions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.IncludeJwtid" class="control-label"></label>
+                <input asp-for="Id4client.IncludeJwtid" class="form-control" />
+                <span asp-validation-for="Id4client.IncludeJwtid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Claims" class="control-label"></label>
+                <input asp-for="Id4client.Claims" class="form-control" />
+                <span asp-validation-for="Id4client.Claims" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AlwaysSendClientClaims" class="control-label"></label>
+                <input asp-for="Id4client.AlwaysSendClientClaims" class="form-control" />
+                <span asp-validation-for="Id4client.AlwaysSendClientClaims" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.ClientClaimsPrefix" class="control-label"></label>
+                <input asp-for="Id4client.ClientClaimsPrefix" class="form-control" />
+                <span asp-validation-for="Id4client.ClientClaimsPrefix" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.PairWiseSubjectSalt" class="control-label"></label>
+                <input asp-for="Id4client.PairWiseSubjectSalt" class="form-control" />
+                <span asp-validation-for="Id4client.PairWiseSubjectSalt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.UserSsoLifetime" class="control-label"></label>
+                <input asp-for="Id4client.UserSsoLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.UserSsoLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.UserCodeType" class="control-label"></label>
+                <input asp-for="Id4client.UserCodeType" class="form-control" />
+                <span asp-validation-for="Id4client.UserCodeType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.DeviceCodeLifetime" class="control-label"></label>
+                <input asp-for="Id4client.DeviceCodeLifetime" class="form-control" />
+                <span asp-validation-for="Id4client.DeviceCodeLifetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AlwaysIncludeUserClaimsInIdToken" class="control-label"></label>
+                <input asp-for="Id4client.AlwaysIncludeUserClaimsInIdToken" class="form-control" />
+                <span asp-validation-for="Id4client.AlwaysIncludeUserClaimsInIdToken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowedScopes" class="control-label"></label>
+                <input asp-for="Id4client.AllowedScopes" class="form-control" />
+                <span asp-validation-for="Id4client.AllowedScopes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Properties" class="control-label"></label>
+                <input asp-for="Id4client.Properties" class="form-control" />
+                <span asp-validation-for="Id4client.Properties" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.BackChannelLogoutSessionRequired" class="control-label"></label>
+                <input asp-for="Id4client.BackChannelLogoutSessionRequired" class="form-control" />
+                <span asp-validation-for="Id4client.BackChannelLogoutSessionRequired" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Clientid" class="control-label"></label>
+                <input asp-for="Id4client.Clientid" class="form-control" />
+                <span asp-validation-for="Id4client.Clientid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.ProtocolType" class="control-label"></label>
+                <input asp-for="Id4client.ProtocolType" class="form-control" />
+                <span asp-validation-for="Id4client.ProtocolType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.ClientSecrets" class="control-label"></label>
+                <input asp-for="Id4client.ClientSecrets" class="form-control" />
+                <span asp-validation-for="Id4client.ClientSecrets" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RequireClientSecret" class="control-label"></label>
+                <input asp-for="Id4client.RequireClientSecret" class="form-control" />
+                <span asp-validation-for="Id4client.RequireClientSecret" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.ClientName" class="control-label"></label>
+                <input asp-for="Id4client.ClientName" class="form-control" />
+                <span asp-validation-for="Id4client.ClientName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Description" class="control-label"></label>
+                <input asp-for="Id4client.Description" class="form-control" />
+                <span asp-validation-for="Id4client.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.ClientUri" class="control-label"></label>
+                <input asp-for="Id4client.ClientUri" class="form-control" />
+                <span asp-validation-for="Id4client.ClientUri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.LogoUri" class="control-label"></label>
+                <input asp-for="Id4client.LogoUri" class="form-control" />
+                <span asp-validation-for="Id4client.LogoUri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RequireConsent" class="control-label"></label>
+                <input asp-for="Id4client.RequireConsent" class="form-control" />
+                <span asp-validation-for="Id4client.RequireConsent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowRememberConsent" class="control-label"></label>
+                <input asp-for="Id4client.AllowRememberConsent" class="form-control" />
+                <span asp-validation-for="Id4client.AllowRememberConsent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowedGrantTypes" class="control-label"></label>
+                <input asp-for="Id4client.AllowedGrantTypes" class="form-control" />
+                <span asp-validation-for="Id4client.AllowedGrantTypes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RequirePkce" class="control-label"></label>
+                <input asp-for="Id4client.RequirePkce" class="form-control" />
+                <span asp-validation-for="Id4client.RequirePkce" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RequireRequestObject" class="control-label"></label>
+                <input asp-for="Id4client.RequireRequestObject" class="form-control" />
+                <span asp-validation-for="Id4client.RequireRequestObject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowAccessTokensViaBrowser" class="control-label"></label>
+                <input asp-for="Id4client.AllowAccessTokensViaBrowser" class="form-control" />
+                <span asp-validation-for="Id4client.AllowAccessTokensViaBrowser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.RedirectUris" class="control-label"></label>
+                <input asp-for="Id4client.RedirectUris" class="form-control" />
+                <span asp-validation-for="Id4client.RedirectUris" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.PostLogoutRedirectUris" class="control-label"></label>
+                <input asp-for="Id4client.PostLogoutRedirectUris" class="form-control" />
+                <span asp-validation-for="Id4client.PostLogoutRedirectUris" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.FrontChannelLogoutUri" class="control-label"></label>
+                <input asp-for="Id4client.FrontChannelLogoutUri" class="form-control" />
+                <span asp-validation-for="Id4client.FrontChannelLogoutUri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.FrontChannelLogoutSessionRequired" class="control-label"></label>
+                <input asp-for="Id4client.FrontChannelLogoutSessionRequired" class="form-control" />
+                <span asp-validation-for="Id4client.FrontChannelLogoutSessionRequired" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.BackChannelLogoutUri" class="control-label"></label>
+                <input asp-for="Id4client.BackChannelLogoutUri" class="form-control" />
+                <span asp-validation-for="Id4client.BackChannelLogoutUri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.AllowedCorsOrigins" class="control-label"></label>
+                <input asp-for="Id4client.AllowedCorsOrigins" class="form-control" />
+                <span asp-validation-for="Id4client.AllowedCorsOrigins" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Type" class="control-label"></label>
+                <input asp-for="Id4client.Type" class="form-control" />
+                <span asp-validation-for="Id4client.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Name" class="control-label"></label>
+                <input asp-for="Id4client.Name" class="form-control" />
+                <span asp-validation-for="Id4client.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Descriptions" class="control-label"></label>
+                <input asp-for="Id4client.Descriptions" class="form-control" />
+                <span asp-validation-for="Id4client.Descriptions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Id4client.Auth2claims" class="control-label"></label>
+                <input asp-for="Id4client.Auth2claims" class="form-control" />
+                <span asp-validation-for="Id4client.Auth2claims" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit"  value="保存"  class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>METU.Admin</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />  <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+        <link href="~/assets/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+        <link href="~/assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
+        <link href="~/assets/css/lib/font-awesome.min.css" rel="stylesheet">
+        <link href="~/assets/css/lib/themify-icons.css" rel="stylesheet">
+        <link href="~/assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
+        <link href="~/assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="~/assets/css/lib/weather-icons.css" rel="stylesheet" />
+        <link href="~/assets/css/lib/menubar/sidebar.css" rel="stylesheet">
+        <link href="~/assets/css/lib/bootstrap.min.css" rel="stylesheet">
+        <link href="~/assets/css/lib/helper.css" rel="stylesheet">
+        <link href="~/assets/css/style.css" rel="stylesheet">
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="~/assets/vendor/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/assets/vendor/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/assets/vendor/magnific-popup/magnific-popup.css" />
+        <link rel="stylesheet" href="~/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+        <!-- Specific Page Vendor CSS -->
+        <link rel="stylesheet" href="~/assets/vendor/select2/select2.css" />
+        <link rel="stylesheet" href="~/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="~/assets/stylesheets/theme.css" />
+
+        <!-- Skin CSS -->
+        <link rel="stylesheet" href="~/assets/stylesheets/skins/default.css" />
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="~/assets/stylesheets/theme-custom.css">
+    </head>
+
+    <body>
+
+        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+            <div class="nano">
+                <div class="nano-content">
+                    <ul>
+                        <div class="logo"><a href="index"><!-- <img src="assets/images/logo.png" alt="" /> --><span>METU</span></a></div>
+                        <li>
+                            <a class="sidebar-sub-toggle"><i class="ti-home"></i> Home <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul><li><a href="~/manage/syspage">系统设置</a></li>
+                                <li><a href="~/manage/syspagedicconfigs">系统参数配置</a></li>
+                                <li><a href="~/manage/syspage">页面设置</a></li>
+                                <li><a href="~/manage/syspageconfigs">页面配置</a></li>
+                                <li><a href="~/manage/syspageservices">页面服务配置</a></li>
+                                <li><a href="~/manage/ids4server">服务端配置</a></li>
+                                <li><a href="~/manage/ids4resources">资源配置</a></li>
+                                <li><a href="~/manage/ids4clients">客户端配置</a></li>
+                              <li><a href="~/manage/sys/index/metu/wms/WMSservicePage/SysPage">系统扩展页面配置</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub-toggle"><i class="ti-user"></i>User <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="~/manage/sysadmins">系统管理员</a></li>
+                                <li><a href="~/manage/Accounts">用户管理</a></li>
+                                <li><a href="~/manage/AccountRoles">角色管理</a></li>
+                                <li><a href="~/manage/menus">菜单管理</a></li>
+                                <li><a href="~/manage/RoleMenus">角色菜单管理</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  DashBoard <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>
+                                <li><a href="#">用户看板</a></li>
+                                <li><a href="#">客户看板</a></li>
+                                <li><a href="#">系统看板</a></li>
+                            </ul>
+                        </li>
+                       @await Html.PartialAsync("_Navigation")
+                        <li><a><i class="ti-close"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /# sidebar -->
+
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="float-left">
+                            <div class="hamburger sidebar-toggle">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="float-right">
+
+                            <div class="dropdown dib">
+                                <div class="header-icon" data-toggle="dropdown">
+                                    <span class="user-avatar">
+                                        Admin
+                                        <i class="ti-angle-down f-s-10"></i>
+                                    </span>
+                                    <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
+                                        <div class="dropdown-content-heading">
+
+                                        </div>
+                                        <div class="dropdown-content-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ti-user"></i>
+                                                        <span>Profile</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ti-email"></i>
+                                                        <span>Inbox</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ti-settings"></i>
+                                                        <span>Setting</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ti-lock"></i>
+                                                        <span>Lock Screen</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="ti-power-off"></i>
+                                                        <span>Logout</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-wrap">
+            <div class="main">
+                <div class="container-fluid">
+
+                    <!-- /# row -->
+                    <section id="main-content">
+
+                        @RenderBody()
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer">
+                                    <p>2021 © Admin. - <a href="http://www.songjifeng.cn">METU</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery vendor -->
+        <script src="~/assets/js/lib/jquery.min.js"></script>
+        <script src="~/assets/js/lib/jquery.nanoscroller.min.js"></script>
+        <!-- nano scroller -->
+        <script src="~/assets/js/lib/menubar/sidebar.js"></script>
+        <script src="~/assets/js/lib/preloader/pace.min.js"></script>
+        <!-- sidebar -->
+
+        <script src="~/assets/js/lib/bootstrap.min.js"></script>
+        <script src="~/assets/js/scripts.js"></script>
+        <!-- bootstrap -->
+
+        <script src="~/assets/js/lib/calendar-2/moment.latest.min.js"></script>
+        <script src="~/assets/js/lib/calendar-2/pignose.calendar.min.js"></script>
+        <script src="~/assets/js/lib/calendar-2/pignose.init.js"></script>
+
+
+        <script src="~/assets/js/lib/weather/jquery.simpleWeather.min.js"></script>
+        <script src="~/assets/js/lib/weather/weather-init.js"></script>
+        <script src="~/assets/js/lib/circle-progress/circle-progress.min.js"></script>
+        <script src="~/assets/js/lib/circle-progress/circle-progress-init.js"></script>
+        <script src="~/assets/js/lib/chartist/chartist.min.js"></script>
+        <script src="~/assets/js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+        <script src="~/assets/js/lib/sparklinechart/sparkline.init.js"></script>
+        <script src="~/assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+        <script src="~/assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
+        <!-- scripit init-->
+        <script src="~/assets/js/dashboard2.js"></script>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+        <style>
+            .copyrights {
+                text-indent: -9999px;
+                height: 0;
+                line-height: 0;
+                font-size: 0;
+                overflow: hidden;
+            }
+        </style>
+    </body>
+
+</html>

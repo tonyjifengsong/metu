@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <Authors>Tony</Authors>
+	  <Company>深圳一水网络科技有限公司</Company>
+	  <Product>METU</Product>
+	  <Description>深圳一水网络科技有限公司开源项目</Description>
+	  <Copyright>深圳一水网络科技有限公司</Copyright>
+	  <AssemblyVersion>1.0.0.1</AssemblyVersion>
+	  <FileVersion>1.0.0.1</FileVersion>
+	  <Version>2022.04.02</Version>
+	  <PackageLicenseFile>license.txt</PackageLicenseFile>
+	  <PackageIcon>20210821000246.png</PackageIcon>
+	  <RepositoryUrl>https://e.coding.net/greefsong/metucore/METU.git</RepositoryUrl>
+	  <PackageProjectUrl>https://e.coding.net/greefsong/metucore/METU.git</PackageProjectUrl>
+	  <PackageReleaseNotes>深圳一水网络科技有限公司</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\20210821000246.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

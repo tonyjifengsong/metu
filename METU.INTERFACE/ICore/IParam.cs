@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace METU.INTERFACE.ICore
+{
+    public interface IParam
+    {/// <summary>
+     /// 用户Tocke
+     /// </summary>
+        string Tocken { get; set; }
+    }
+}

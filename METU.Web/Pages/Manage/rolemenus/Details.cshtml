@@ -1,0 +1,79 @@
+﻿@page
+@model METU.Admin.Pages.Manage.rolemenus.DetailsModel
+
+@{
+    ViewData["Title"] = "详情 ";
+}
+
+<h1>详情</h1>
+
+<div>
+    <h4>SysroleMenu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.Softtype)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.Softtype)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.Roleid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.Roleid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.Menuid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.Menuid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.UpdateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.UpdateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.CreateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.CreateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.UpdateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.UpdateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.IsEnabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.IsEnabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysroleMenu.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysroleMenu.IsDeleted)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SysroleMenu.id">编辑</a> |
+    <a asp-page="./Index">返回</a>
+</div>

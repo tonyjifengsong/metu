@@ -1,0 +1,54 @@
+﻿@page
+@model METU.Admin.Pages.Manage.sysadmins.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SysAdmin[0].CreateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysAdmin[0].UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysAdmin[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysAdmin[0].Remark)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SysAdmin) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remark)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,84 @@
+﻿@page
+@model METU.Admin.Pages.Manage.accountroles.CreateModel
+
+@{
+    ViewData["Title"] = "新增";
+}
+
+<h1>新增</h1>
+
+<h4>SysaccountRole</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.id" class="control-label"></label>
+                <input asp-for="SysaccountRole.id" class="form-control" />
+                <span asp-validation-for="SysaccountRole.id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.Softtype" class="control-label"></label>
+                <input asp-for="SysaccountRole.Softtype" class="form-control" />
+                <span asp-validation-for="SysaccountRole.Softtype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.Accountid" class="control-label"></label>
+                <input asp-for="SysaccountRole.Accountid" class="form-control" />
+                <span asp-validation-for="SysaccountRole.Accountid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.Roleid" class="control-label"></label>
+                <input asp-for="SysaccountRole.Roleid" class="form-control" />
+                <span asp-validation-for="SysaccountRole.Roleid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.Cid" class="control-label"></label>
+                <input asp-for="SysaccountRole.Cid" class="form-control" />
+                <span asp-validation-for="SysaccountRole.Cid" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="SysaccountRole.UpdateUserid" class="control-label"></label>
+                <input asp-for="SysaccountRole.UpdateUserid" class="form-control" />
+                <span asp-validation-for="SysaccountRole.UpdateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.CreateUserid" class="control-label"></label>
+                <input asp-for="SysaccountRole.CreateUserid" class="form-control" />
+                <span asp-validation-for="SysaccountRole.CreateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.UpdateDate" class="control-label"></label>
+                <input asp-for="SysaccountRole.UpdateDate" class="form-control" />
+                <span asp-validation-for="SysaccountRole.UpdateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysaccountRole.CreateDate" class="control-label"></label>
+                <input asp-for="SysaccountRole.CreateDate" class="form-control" />
+                <span asp-validation-for="SysaccountRole.CreateDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SysaccountRole.IsEnabled" class="control-label"></label>
+                <input asp-for="SysaccountRole.IsEnabled" class="form-control" />
+                <span asp-validation-for="SysaccountRole.IsEnabled" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="SysaccountRole.IsDeleted" class="control-label"></label>
+                <input asp-for="SysaccountRole.IsDeleted" class="form-control" />
+                <span asp-validation-for="SysaccountRole.IsDeleted" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>METU.Quartz</name>
+    </assembly>
+    <members>
+        <member name="T:System.ASMHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ASMHelper.GetClassName(System.String)">
+            <summary>  
+            获取程序集中的实现类对应的多个接口
+            </summary>  
+            <param name="assemblyName">程序集</param>
+        </member>
+        <member name="F:System.ASMHelper.lst">
+            <summary>
+            私有变量
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:System.ASMHelper.getFile(System.String,System.String)" -->
+        <member name="M:System.ASMHelper.getdir(System.String,System.String)">
+            <summary>
+            私有方法,递归获取指定类型文件,包含子文件夹
+            </summary>
+            <param name="path"></param>
+            <param name="extName"></param>
+        </member>
+        <member name="M:System.ASMHelper.GetAllAssemblies">
+            <summary>
+            获取bin下全部dll
+            </summary>
+        </member>
+        <member name="M:System.ASMHelper.GetAllClass(System.String,System.String)">
+            <summary>
+            获取指定接口的所有类
+            </summary>
+            <param name="interfacename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ASMHelper.GetMidwareAllClass(System.String)">
+            <summary>
+            获取指定接口的所有类
+            </summary>
+            <param name="interfacename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ASMHelper.GetClass(System.String)">
+            <summary>
+            获取指定接口的所有类
+            </summary>
+            <param name="interfacename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ASMHelper.GetAllInterface(System.String,System.String,System.Boolean)">
+            <summary>
+            获取指定接口的所有接口
+            </summary>
+            <param name="interfacename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ASMHelper.GetDllFullPathWithName(System.String,System.Boolean)">
+            <summary>
+            获取所有DLL文件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.ASMHelper.writefile(System.String,System.String)">
+            <summary>
+            写日志
+            </summary>
+            <param name="model"></param>
+            <param name="fileName">文件名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.AutoJobMiddlewareExtentions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.AutoJobMiddlewareExtentions.UseAutoJobMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IApplicationLifetime)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <param name="extStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.ConfigureJobServicesExtentions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.ConfigureJobServicesExtentions.AddAutoJobConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            SPD配置服务
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:System.ConfigureJobServicesExtentions.AddAutoJobStartupService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            自动注入业务服务
+            </summary>
+        </member>
+        <member name="M:System.ConfigureJobServicesExtentions.AddAutoJobService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            自动注入业务服务
+            </summary>
+        </member>
+        <member name="T:System.FileHelpers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:System.FileHelpers.Writelog(System.Object,System.String,System.Boolean,System.String,System.String,System.Boolean)">
+            <summary>
+            将信息写入日志
+            </summary>
+            <param name="message">信息参数</param>
+            <param name="filepath">文件路径</param>
+            <param name="asyncflag">是否异步</param>
+        </member>
+        <member name="M:System.FileHelpers.asyncWriteFile(System.Object,System.String,System.Boolean)">
+            <summary>
+            异步模式写日志
+            </summary>
+            <param name="model"></param>
+            <param name="filepath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.FileHelpers.Writefile(System.Object,System.String,System.Boolean)">
+            <summary>
+            把字符串写到日志文件中
+            </summary>
+            <param name="model">对象参数</param>
+            <param name="fileName">完整的文件名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:METU.Quartz.IDoWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:METU.Quartz.IDoWork.dowork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:METU.Quartz.IJobContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:METU.API.Controllers.MyJob">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:METU.API.Controllers.MyJob.GetTimerConfig">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:METU.API.Controllers.MyJob.GetTimerFrequent">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Quartz.ITonyJob">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Quartz.ITonyJob.GetTimerConfig">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Quartz.ITonyJob.GetTimerFrequent">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Quartz.IOCJobFactory">
+            <summary>
+            IOCJobFactory ：实现在Timer触发的时候注入生成对应的Job组件
+            </summary>
+        </member>
+    </members>
+</doc>

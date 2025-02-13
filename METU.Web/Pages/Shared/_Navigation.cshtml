@@ -1,0 +1,17 @@
+﻿@using METU.Admin.Model
+@{
+    CoreBLL corebll = new CoreBLL();
+    var menulist= corebll.dbh.Set<Menu>().ToList();
+}
+@foreach (var item in menulist) {
+    @if(@item.Parentid==null){
+<li>
+                            <a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  @item.Name <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            <ul>@foreach (var itemin in menulist) {
+    @if(@item.id==@itemin.Parentid){
+                                <li><a href="@itemin.Url">@itemin.Name</a></li>
+    }}                             
+                            </ul>
+                        </li>
+    }
+}

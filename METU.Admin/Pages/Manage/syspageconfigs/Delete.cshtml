@@ -1,0 +1,154 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspageconfigs.DeleteModel
+
+@{
+    ViewData["Title"] = "删除";
+}
+
+<h1>删除</h1>
+
+
+<div>
+    <h4>SysPageConfig</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.SysPageid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.SysPageid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.ControlName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.ControlName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.ControlCaption)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.ControlCaption)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.ControlType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.ControlType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Placeholder)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Placeholder)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Require)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Require)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Msg)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Msg)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Explain)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Explain)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Enabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Enabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.SourceData)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.SourceData)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.InterfaceAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.InterfaceAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.ControlOrder)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.ControlOrder)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.IsGroup)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.IsGroup)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.GroupField)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.GroupField)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.UpdateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.UpdateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.CreateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.CreateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.UpdateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.UpdateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.IsEnabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.IsEnabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.IsDeleted)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SysPageConfig.Version)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SysPageConfig.Version)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SysPageConfig.id" />
+        <input type="submit" value="删除" class="btn btn-danger" /> |
+        <a asp-page="./Index">返回</a>
+    </form>
+</div>

@@ -1,0 +1,80 @@
+﻿@page
+@model METU.Admin.Pages.Manage.rolemenus.EditModel
+
+@{
+    ViewData["Title"] = "编辑";
+}
+
+<h1>编辑</h1>
+
+<h4>SysroleMenu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SysroleMenu.id" />
+            <div class="form-group">
+                <label asp-for="SysroleMenu.Softtype" class="control-label"></label>
+                <input asp-for="SysroleMenu.Softtype" class="form-control" />
+                <span asp-validation-for="SysroleMenu.Softtype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysroleMenu.Roleid" class="control-label"></label>
+                <input asp-for="SysroleMenu.Roleid" class="form-control" />
+                <span asp-validation-for="SysroleMenu.Roleid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysroleMenu.Menuid" class="control-label"></label>
+                <input asp-for="SysroleMenu.Menuid" class="form-control" />
+                <span asp-validation-for="SysroleMenu.Menuid" class="text-danger"></span>
+            </div>
+          @*  <div class="form-group">
+                <label asp-for="SysroleMenu.Cid" class="control-label"></label>
+                <input asp-for="SysroleMenu.Cid" class="form-control" />
+                <span asp-validation-for="SysroleMenu.Cid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysroleMenu.UpdateUserid" class="control-label"></label>
+                <input asp-for="SysroleMenu.UpdateUserid" class="form-control" />
+                <span asp-validation-for="SysroleMenu.UpdateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysroleMenu.CreateUserid" class="control-label"></label>
+                <input asp-for="SysroleMenu.CreateUserid" class="form-control" />
+                <span asp-validation-for="SysroleMenu.CreateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysroleMenu.UpdateDate" class="control-label"></label>
+                <input asp-for="SysroleMenu.UpdateDate" class="form-control" />
+                <span asp-validation-for="SysroleMenu.UpdateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysroleMenu.CreateDate" class="control-label"></label>
+                <input asp-for="SysroleMenu.CreateDate" class="form-control" />
+                <span asp-validation-for="SysroleMenu.CreateDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SysroleMenu.IsEnabled" class="control-label"></label>
+                <input asp-for="SysroleMenu.IsEnabled" class="form-control" />
+                <span asp-validation-for="SysroleMenu.IsEnabled" class="text-danger"></span>
+            </div>
+          @*  <div class="form-group">
+                <label asp-for="SysroleMenu.IsDeleted" class="control-label"></label>
+                <input asp-for="SysroleMenu.IsDeleted" class="form-control" />
+                <span asp-validation-for="SysroleMenu.IsDeleted" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit"  value="保存"  class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

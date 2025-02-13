@@ -1,0 +1,58 @@
+﻿@page
+@model METU.Admin.Pages.Manage.rolemenus.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SysroleMenu[0].Softtype)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysroleMenu[0].Roleid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysroleMenu[0].Menuid)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.SysroleMenu[0].IsEnabled)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SysroleMenu) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Softtype)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Roleid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Menuid)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.IsEnabled)
+            </td>
+           
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

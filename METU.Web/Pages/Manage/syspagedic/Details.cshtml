@@ -1,0 +1,115 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspagedic.DetailsModel
+
+@{
+    ViewData["Title"] = "详情 ";
+}
+
+<h1>详情</h1>
+
+<div>
+    <h4>SyspageDic</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.SetKey)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.SetKey)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.SortName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.SortName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.SortCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.SortCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.Rank)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.Rank)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.Parentid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.Parentid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.Pid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.Pid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.Cid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.Cid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.UpdateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.UpdateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.CreateUserid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.CreateUserid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.UpdateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.UpdateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.IsEnabled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.IsEnabled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.IsDeleted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.IsDeleted)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.Version)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.Version)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.Cname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.Cname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SyspageDic.AppName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SyspageDic.AppName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SyspageDic.id">编辑</a> |
+    <a asp-page="./Index">返回</a>
+</div>

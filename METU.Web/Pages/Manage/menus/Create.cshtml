@@ -1,0 +1,179 @@
+﻿@page
+@model METU.Admin.Pages.Manage.menus.CreateModel
+
+@{
+    ViewData["Title"] = "新增";
+}
+
+<h1>新增</h1>
+
+<h4>Menu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Menu.id" class="control-label"></label>
+                <input asp-for="Menu.id" class="form-control" />
+                <span asp-validation-for="Menu.id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Domainid" class="control-label"></label>
+                <input asp-for="Menu.Domainid" class="form-control" />
+                <span asp-validation-for="Menu.Domainid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.ModuleCode" class="control-label"></label>
+                <input asp-for="Menu.ModuleCode" class="form-control" />
+                <span asp-validation-for="Menu.ModuleCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Type" class="control-label"></label>
+                <input asp-for="Menu.Type" class="form-control" />
+                <span asp-validation-for="Menu.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Parentid" class="control-label"></label>
+                <input asp-for="Menu.Parentid" class="form-control" />
+                <span asp-validation-for="Menu.Parentid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Name" class="control-label"></label>
+                <input asp-for="Menu.Name" class="form-control" />
+                <span asp-validation-for="Menu.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.RouteName" class="control-label"></label>
+                <input asp-for="Menu.RouteName" class="form-control" />
+                <span asp-validation-for="Menu.RouteName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.RouteParams" class="control-label"></label>
+                <input asp-for="Menu.RouteParams" class="form-control" />
+                <span asp-validation-for="Menu.RouteParams" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.RouteQuery" class="control-label"></label>
+                <input asp-for="Menu.RouteQuery" class="form-control" />
+                <span asp-validation-for="Menu.RouteQuery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Icon" class="control-label"></label>
+                <input asp-for="Menu.Icon" class="form-control" />
+                <span asp-validation-for="Menu.Icon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.IconColor" class="control-label"></label>
+                <input asp-for="Menu.IconColor" class="form-control" />
+                <span asp-validation-for="Menu.IconColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Url" class="control-label"></label>
+                <input asp-for="Menu.Url" class="form-control" />
+                <span asp-validation-for="Menu.Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Level" class="control-label"></label>
+                <input asp-for="Menu.Level" class="form-control" />
+                <span asp-validation-for="Menu.Level" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Show" class="control-label"></label>
+                <input asp-for="Menu.Show" class="form-control" />
+                <span asp-validation-for="Menu.Show" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Sort" class="control-label"></label>
+                <input asp-for="Menu.Sort" class="form-control" />
+                <span asp-validation-for="Menu.Sort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Target" class="control-label"></label>
+                <input asp-for="Menu.Target" class="form-control" />
+                <span asp-validation-for="Menu.Target" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.DialogWidth" class="control-label"></label>
+                <input asp-for="Menu.DialogWidth" class="form-control" />
+                <span asp-validation-for="Menu.DialogWidth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.DialogHeight" class="control-label"></label>
+                <input asp-for="Menu.DialogHeight" class="form-control" />
+                <span asp-validation-for="Menu.DialogHeight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Remarks" class="control-label"></label>
+                <input asp-for="Menu.Remarks" class="form-control" />
+                <span asp-validation-for="Menu.Remarks" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="Menu.CreatedTime" class="control-label"></label>
+                <input asp-for="Menu.CreatedTime" class="form-control" />
+                <span asp-validation-for="Menu.CreatedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.CreatedBy" class="control-label"></label>
+                <input asp-for="Menu.CreatedBy" class="form-control" />
+                <span asp-validation-for="Menu.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.ModifiedTime" class="control-label"></label>
+                <input asp-for="Menu.ModifiedTime" class="form-control" />
+                <span asp-validation-for="Menu.ModifiedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.ModifiedBy" class="control-label"></label>
+                <input asp-for="Menu.ModifiedBy" class="form-control" />
+                <span asp-validation-for="Menu.ModifiedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.Cid" class="control-label"></label>
+                <input asp-for="Menu.Cid" class="form-control" />
+                <span asp-validation-for="Menu.Cid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.UpdateUserid" class="control-label"></label>
+                <input asp-for="Menu.UpdateUserid" class="form-control" />
+                <span asp-validation-for="Menu.UpdateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.CreateUserid" class="control-label"></label>
+                <input asp-for="Menu.CreateUserid" class="form-control" />
+                <span asp-validation-for="Menu.CreateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.UpdateDate" class="control-label"></label>
+                <input asp-for="Menu.UpdateDate" class="form-control" />
+                <span asp-validation-for="Menu.UpdateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Menu.CreateDate" class="control-label"></label>
+                <input asp-for="Menu.CreateDate" class="form-control" />
+                <span asp-validation-for="Menu.CreateDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Menu.IsEnabled" class="control-label"></label>
+                <input asp-for="Menu.IsEnabled" class="form-control" />
+                <span asp-validation-for="Menu.IsEnabled" class="text-danger"></span>
+            </div>
+          @*  <div class="form-group">
+                <label asp-for="Menu.IsDeleted" class="control-label"></label>
+                <input asp-for="Menu.IsDeleted" class="form-control" />
+                <span asp-validation-for="Menu.IsDeleted" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

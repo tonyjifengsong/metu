@@ -1,0 +1,154 @@
+﻿@page
+@model METU.Admin.Pages.Manage.menus.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Domainid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].ModuleCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Parentid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].RouteName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].RouteParams)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].RouteQuery)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Icon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].IconColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Level)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Show)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Sort)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Target)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].DialogWidth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].DialogHeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].DialogFullscreen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Remarks)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].IsEnabled)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Menu) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Domainid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModuleCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parentid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RouteName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RouteParams)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RouteQuery)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Icon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IconColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Show)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sort)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Target)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DialogWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DialogHeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DialogFullscreen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remarks)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.IsEnabled)
+            </td>
+          
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

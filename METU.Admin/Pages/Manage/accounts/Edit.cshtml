@@ -1,0 +1,141 @@
+﻿@page
+@model METU.Admin.Pages.Manage.accounts.EditModel
+
+@{
+    ViewData["Title"] = "编辑";
+}
+
+<h1>编辑</h1>
+
+<h4>Account</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Account.id" />
+            <div class="form-group">
+                <label asp-for="Account.Type" class="control-label"></label>
+                <input asp-for="Account.Type" class="form-control" />
+                <span asp-validation-for="Account.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.UserName" class="control-label"></label>
+                <input asp-for="Account.UserName" class="form-control" />
+                <span asp-validation-for="Account.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Password" class="control-label"></label>
+                <input asp-for="Account.Password" class="form-control" />
+                <span asp-validation-for="Account.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Name" class="control-label"></label>
+                <input asp-for="Account.Name" class="form-control" />
+                <span asp-validation-for="Account.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Phone" class="control-label"></label>
+                <input asp-for="Account.Phone" class="form-control" />
+                <span asp-validation-for="Account.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Email" class="control-label"></label>
+                <input asp-for="Account.Email" class="form-control" />
+                <span asp-validation-for="Account.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.LoginTime" class="control-label"></label>
+                <input asp-for="Account.LoginTime" class="form-control" />
+                <span asp-validation-for="Account.LoginTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.LoginIp" class="control-label"></label>
+                <input asp-for="Account.LoginIp" class="form-control" />
+                <span asp-validation-for="Account.LoginIp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Status" class="control-label"></label>
+                <input asp-for="Account.Status" class="form-control" />
+                <span asp-validation-for="Account.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.IsLock" class="control-label"></label>
+                <input asp-for="Account.IsLock" class="form-control" />
+                <span asp-validation-for="Account.IsLock" class="text-danger"></span>
+            </div>
+           @* <div class="form-group">
+                <label asp-for="Account.CreatedTime" class="control-label"></label>
+                <input asp-for="Account.CreatedTime" class="form-control" />
+                <span asp-validation-for="Account.CreatedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.CreatedBy" class="control-label"></label>
+                <input asp-for="Account.CreatedBy" class="form-control" />
+                <span asp-validation-for="Account.CreatedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.ModifiedTime" class="control-label"></label>
+                <input asp-for="Account.ModifiedTime" class="form-control" />
+                <span asp-validation-for="Account.ModifiedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.ModifiedBy" class="control-label"></label>
+                <input asp-for="Account.ModifiedBy" class="form-control" />
+                <span asp-validation-for="Account.ModifiedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.ClosedTime" class="control-label"></label>
+                <input asp-for="Account.ClosedTime" class="form-control" />
+                <span asp-validation-for="Account.ClosedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.ClosedBy" class="control-label"></label>
+                <input asp-for="Account.ClosedBy" class="form-control" />
+                <span asp-validation-for="Account.ClosedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Deleted" class="control-label"></label>
+                <input asp-for="Account.Deleted" class="form-control" />
+                <span asp-validation-for="Account.Deleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.DeletedTime" class="control-label"></label>
+                <input asp-for="Account.DeletedTime" class="form-control" />
+                <span asp-validation-for="Account.DeletedTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.DeletedBy" class="control-label"></label>
+                <input asp-for="Account.DeletedBy" class="form-control" />
+                <span asp-validation-for="Account.DeletedBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.cid" class="control-label"></label>
+                <input asp-for="Account.cid" class="form-control" />
+                <span asp-validation-for="Account.cid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Pid" class="control-label"></label>
+                <input asp-for="Account.Pid" class="form-control" />
+                <span asp-validation-for="Account.Pid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Domainid" class="control-label"></label>
+                <input asp-for="Account.Domainid" class="form-control" />
+                <span asp-validation-for="Account.Domainid" class="text-danger"></span>
+            </div>
+           *@
+            <div class="form-group">
+                <input type="submit"  value="保存"  class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

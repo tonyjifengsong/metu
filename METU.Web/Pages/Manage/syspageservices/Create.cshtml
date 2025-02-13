@@ -1,0 +1,66 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspageservices.CreateModel
+
+@{
+    ViewData["Title"] = "新增";
+}
+
+<h1>新增</h1>
+
+<h4>SysPageService</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SysPageService.id" class="control-label"></label>
+                <input asp-for="SysPageService.id" class="form-control" />
+                <span asp-validation-for="SysPageService.id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysPageService.Domainid" class="control-label"></label>
+                <input asp-for="SysPageService.Domainid" class="form-control" />
+                <span asp-validation-for="SysPageService.Domainid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysPageService.Servicename" class="control-label"></label>
+                <input asp-for="SysPageService.Servicename" class="form-control" />
+                <span asp-validation-for="SysPageService.Servicename" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysPageService.ServiceEvents" class="control-label"></label>
+                <input asp-for="SysPageService.ServiceEvents" class="form-control" />
+                <span asp-validation-for="SysPageService.ServiceEvents" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysPageService.Remarks" class="control-label"></label>
+                <input asp-for="SysPageService.Remarks" class="form-control" />
+                <span asp-validation-for="SysPageService.Remarks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SysPageService.ReturnType" class="control-label"></label>
+                <input asp-for="SysPageService.ReturnType" class="form-control" />
+                <span asp-validation-for="SysPageService.ReturnType" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="SysPageService.IsEnabled" class="control-label"></label>
+                <input asp-for="SysPageService.IsEnabled" class="form-control" />
+                <span asp-validation-for="SysPageService.IsEnabled" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

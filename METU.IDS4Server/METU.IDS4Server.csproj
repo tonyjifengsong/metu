@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>2022.04.42</Version>
+    <Authors>tony</Authors>
+    <Product>METU</Product>
+    <Company>深圳一水网络科技有限公司</Company>
+    <Description>深圳一水网络科技有限公司</Description>
+    <Copyright>深圳一水网络科技有限公司</Copyright>
+    <PackageReleaseNotes>深圳一水网络科技有限公司</PackageReleaseNotes>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <PackageIcon>20210821000246.png</PackageIcon>
+    <PackageProjectUrl>https://e.coding.net/greefsong/metucore/METU.git</PackageProjectUrl>
+    <RepositoryUrl>https://e.coding.net/greefsong/metucore/METU.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="4.1.2" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.1.2" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="4.1.2" />
+    <PackageReference Include="METU.BasicCore" Version="2022.4.58" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.42.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\20210821000246.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

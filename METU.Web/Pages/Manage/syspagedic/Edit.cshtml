@@ -1,0 +1,110 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspagedic.EditModel
+
+@{
+    ViewData["Title"] = "编辑";
+}
+
+<h1>编辑</h1>
+
+<h4>SyspageDic</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.SetKey" class="control-label"></label>
+                <input asp-for="SyspageDic.SetKey" class="form-control" />
+                <span asp-validation-for="SyspageDic.SetKey" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.SortName" class="control-label"></label>
+                <input asp-for="SyspageDic.SortName" class="form-control" />
+                <span asp-validation-for="SyspageDic.SortName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.SortCode" class="control-label"></label>
+                <input asp-for="SyspageDic.SortCode" class="form-control" />
+                <span asp-validation-for="SyspageDic.SortCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.Rank" class="control-label"></label>
+                <input asp-for="SyspageDic.Rank" class="form-control" />
+                <span asp-validation-for="SyspageDic.Rank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.Parentid" class="control-label"></label>
+                <input asp-for="SyspageDic.Parentid" class="form-control" />
+                <span asp-validation-for="SyspageDic.Parentid" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="SyspageDic.id" />
+           @* <div class="form-group">
+                <label asp-for="SyspageDic.Pid" class="control-label"></label>
+                <input asp-for="SyspageDic.Pid" class="form-control" />
+                <span asp-validation-for="SyspageDic.Pid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.Cid" class="control-label"></label>
+                <input asp-for="SyspageDic.Cid" class="form-control" />
+                <span asp-validation-for="SyspageDic.Cid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.UpdateUserid" class="control-label"></label>
+                <input asp-for="SyspageDic.UpdateUserid" class="form-control" />
+                <span asp-validation-for="SyspageDic.UpdateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.CreateUserid" class="control-label"></label>
+                <input asp-for="SyspageDic.CreateUserid" class="form-control" />
+                <span asp-validation-for="SyspageDic.CreateUserid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.UpdateDate" class="control-label"></label>
+                <input asp-for="SyspageDic.UpdateDate" class="form-control" />
+                <span asp-validation-for="SyspageDic.UpdateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.CreateDate" class="control-label"></label>
+                <input asp-for="SyspageDic.CreateDate" class="form-control" />
+                <span asp-validation-for="SyspageDic.CreateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.IsEnabled" class="control-label"></label>
+                <input asp-for="SyspageDic.IsEnabled" class="form-control" />
+                <span asp-validation-for="SyspageDic.IsEnabled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.IsDeleted" class="control-label"></label>
+                <input asp-for="SyspageDic.IsDeleted" class="form-control" />
+                <span asp-validation-for="SyspageDic.IsDeleted" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="SyspageDic.Version" class="control-label"></label>
+                <input asp-for="SyspageDic.Version" class="form-control" />
+                <span asp-validation-for="SyspageDic.Version" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.Cname" class="control-label"></label>
+                <input asp-for="SyspageDic.Cname" class="form-control" />
+                <span asp-validation-for="SyspageDic.Cname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SyspageDic.AppName" class="control-label"></label>
+                <input asp-for="SyspageDic.AppName" class="form-control" />
+                <span asp-validation-for="SyspageDic.AppName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit"  value="保存"  class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

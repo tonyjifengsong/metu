@@ -1,0 +1,88 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspage.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].IdorderNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].PageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].ObjectType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].ObjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].PageNameEns)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].Sourcedata)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].InterfaceAddress)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].IsEnabled)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.SysPage[0].Version)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SysPage) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdorderNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObjectType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObjectName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageNameEns)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sourcedata)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InterfaceAddress)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.IsEnabled)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

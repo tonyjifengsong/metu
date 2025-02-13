@@ -1,0 +1,39 @@
+﻿@page
+@model METU.Admin.Pages.Manage.sys.CreateModel
+
+@{
+    ViewData["Title"] = "新增";
+}
+<!-- /# row -->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-title">
+                <h4>新增</h4>
+
+            </div>
+            <div class="card-body">
+                <div class="basic-form">
+                    <form method="post">
+                        @for (int i = 0; i < Model.dtCtrols.Rows.Count; i++)
+                        {<div class="form-group">
+                                <label> @Model.dtCtrols.Rows[i]["chinese"]</label>
+                                <input name="@Model.dtCtrols.Rows[i]["english"]" type="@Model.dtCtrols.Rows[i]["controltype"]" class="form-control" placeholder="@Model.dtCtrols.Rows[i]["placeholder"]">
+                            </div>
+                        }
+                        <div class="form-group">
+                            <input type="submit" value="保存" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-page="./Index">返回</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

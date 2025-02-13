@@ -1,0 +1,348 @@
+﻿@page
+@model METU.Admin.Pages.Manage.ids4server.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AppName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Pid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Cid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowOfflineAccess)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].IdentityTokenLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowedIdentityTokenSigningAlgorithms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AccessTokenLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AuthorizationCodeLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AbsoluteRefreshTokenLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].SlidingRefreshTokenLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].ConsentLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RefreshTokenUsage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].UpdateAccessTokenClaimsOnRefresh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RefreshTokenExpiration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AccessTokenType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].EnableLocalLogin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].IdentityProviderRestrictions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].IncludeJwtid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Claims)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AlwaysSendClientClaims)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].ClientClaimsPrefix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].PairWiseSubjectSalt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].UserSsoLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].UserCodeType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].DeviceCodeLifetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AlwaysIncludeUserClaimsInIdToken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowedScopes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Properties)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].BackChannelLogoutSessionRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Clientid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].ProtocolType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].ClientSecrets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RequireClientSecret)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].ClientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].ClientUri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].LogoUri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RequireConsent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowRememberConsent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowedGrantTypes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RequirePkce)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RequireRequestObject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowAccessTokensViaBrowser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].RedirectUris)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].PostLogoutRedirectUris)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].FrontChannelLogoutUri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].FrontChannelLogoutSessionRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].BackChannelLogoutUri)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].AllowedCorsOrigins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Descriptions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id4server[0].Auth2claims)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Id4server) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowOfflineAccess)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdentityTokenLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowedIdentityTokenSigningAlgorithms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccessTokenLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorizationCodeLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbsoluteRefreshTokenLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SlidingRefreshTokenLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsentLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RefreshTokenUsage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateAccessTokenClaimsOnRefresh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RefreshTokenExpiration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccessTokenType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnableLocalLogin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdentityProviderRestrictions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IncludeJwtid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Claims)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlwaysSendClientClaims)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientClaimsPrefix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PairWiseSubjectSalt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserSsoLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserCodeType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeviceCodeLifetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlwaysIncludeUserClaimsInIdToken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowedScopes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Properties)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BackChannelLogoutSessionRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clientid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProtocolType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientSecrets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequireClientSecret)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientUri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LogoUri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequireConsent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowRememberConsent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowedGrantTypes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequirePkce)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequireRequestObject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowAccessTokensViaBrowser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RedirectUris)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostLogoutRedirectUris)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FrontChannelLogoutUri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FrontChannelLogoutSessionRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BackChannelLogoutUri)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllowedCorsOrigins)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descriptions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Auth2claims)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

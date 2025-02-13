@@ -1,0 +1,82 @@
+﻿@page
+@model METU.Admin.Pages.Manage.syspageservices.IndexModel
+
+@{
+    ViewData["Title"] = "列表";
+}
+
+
+
+<p>
+    <a asp-page="Create">新增</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].Domainid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].Servicename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].ServiceEvents)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].Remarks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].ReturnType)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].IsEnabled)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].Version)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SysPageService[0].Methodname)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SysPageService) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Domainid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Servicename)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServiceEvents)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnType)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.IsEnabled)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Version)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Methodname)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">编辑</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">详情</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

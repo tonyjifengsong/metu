@@ -1,0 +1,65 @@
+﻿@page  "{id?}/{appname?}/{pagename?}/{servicename?}/{pagesize?}/{currentpage?}/{version?}"
+@model METU.Admin.Pages.Manage.sys.ListModel
+@{ ViewData["Title"] = "列表";
+}
+<!-- start: page -->
+<section class="panel">
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="mb-md">
+                    <a id="addToTable" class="btn btn-primary" asp-page="Create">新增 <i class="fa fa-plus"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped mb-none" id="datatable-editable">
+            <thead>
+                <tr>@if(@Model.dtCtrols!=null){
+                   
+                    @for (int i = 0; i < Model.dtCtrols.Rows.Count; i++)
+                    {
+                        <th>
+                            @Model.dtCtrols.Rows[i]["chinese"]
+                        </th>
+                    }
+                    }
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.dtCtrols != null)
+                {
+                    @if (Model.dtDataList != null)
+                    {
+                        @for (int i = 0; i < Model.dtDataList.Rows.Count; i++)
+                        {
+                            <tr class="gradeX">
+                                @for (int j = 0; j < Model.dtCtrols.Rows.Count; j++)
+                                {
+                                    <th>
+                                        @if (Model.dtCtrols.Rows[j]["english"] != null)
+                                        {
+                                            @if (Model.dtCtrols.Rows[j]["english"].ToString().Trim() != "inputop")
+                                            {
+                                                @Model.dtDataList.Rows[i][Model.dtCtrols.Rows[j]["english"].ToString()]
+                                            }
+                                        }
+                                    </th>
+                                }
+                                <td class="actions">
+                                    <a asp-page="./Edit" asp-route-id="@Model.dtDataList.Rows[i]["id"]" asp-route-appname="@Model.appname"  asp-route-servicename="@Model.servicename"   asp-route-cid="@Model.cid"    asp-route-pagename="@Model.pagename" >编辑</a> |
+                                    <a asp-page="./Details" asp-route-id="@Model.dtDataList.Rows[i]["id"]" asp-route-appname="@Model.appname"  asp-route-servicename="@Model.servicename"  asp-route-cid="@Model.cid"    asp-route-pagename="@Model.pagename" >详情</a> |
+                                    <a asp-page="./Delete" asp-route-id="@Model.dtDataList.Rows[i]["id"]"  asp-route-appname="@Model.appname"  asp-route-servicename="@Model.servicename"  asp-route-cid="@Model.cid"    asp-route-pagename="@Model.pagename" >删除</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- end: page -->
